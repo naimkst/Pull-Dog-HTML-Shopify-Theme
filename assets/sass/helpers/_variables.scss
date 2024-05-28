@@ -1,0 +1,159 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+// Helvetica Neue
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../HelveticaNeue-Bold.woff2') format('woff2'),
+        url('../HelveticaNeue-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../HelveticaNeue-Black.woff2') format('woff2'),
+        url('../HelveticaNeue-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../HelveticaNeue-Light.woff2') format('woff2'),
+        url('../HelveticaNeue-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../HelveticaNeue-Medium.woff2') format('woff2'),
+        url('../HelveticaNeue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../HelveticaNeue-Roman.woff2') format('woff2'),
+        url('../HelveticaNeue-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Plain';
+    src: url('../Plain-Light.woff2') format('woff2'),
+        url('../Plain-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plain';
+    src: url('../Plain-Regular.woff2') format('woff2'),
+        url('../Plain-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plain';
+    src: url('../Plain-Medium.woff2') format('woff2'),
+        url('../Plain-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plain';
+    src: url('../Plain-Bold.woff2') format('woff2'),
+        url('../Plain-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('../HelveticaNeueLTPro-Roman.woff2') format('woff2'),
+        url('../HelveticaNeueLTPro-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('../HelveticaNeueLTPro-Lt.woff2') format('woff2'),
+        url('../HelveticaNeueLTPro-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('../HelveticaNeueLTPro-Hv.woff2') format('woff2'),
+        url('../HelveticaNeueLTPro-Hv.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('../HelveticaNeueLTPro-Bd.woff2') format('woff2'),
+        url('../HelveticaNeueLTPro-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('../HelveticaNeueLTPro-BdCn.woff2') format('woff2'),
+        url('../HelveticaNeueLTPro-BdCn.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+// fonts
+$base-font-size: 15;
+$base-font: 'Plain';
+$heading-font: 'Helvetica Neue';
+$heading-font2: 'Helvetica Neue LT Pro';
+
+
+
+// color
+$dark-gray: #000; //
+$body-color: #0A0A0A;
+$white: #fff;
+$light: #7C7C7C; //
+$black: #000;
+$small-black: #333;
+$cyan: #F9F9F9; //
+
+$theme-primary-color: #D90214; //
+$body-bg-color: #fff;
+$section-bg-color: #F1E2CC; //
+$text-color: #7F7F8A; //
+$text-light-color: #6F6F6F; //
+$heading-color: #000;
+$border-color: #3C3C3C; //
+$border-color-s2: #F1E2CC; //
