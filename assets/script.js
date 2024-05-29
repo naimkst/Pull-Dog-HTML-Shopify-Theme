@@ -121,71 +121,7 @@
     })
 
 
-    // HERO SLIDER
-    var menu = [];
-    jQuery('.swiper-slide').each(function (index) {
-        menu.push(jQuery(this).find('.slide-inner').attr("data-text"));
-    });
-    var interleaveOffset = 0.5;
-    var swiperOptions = {
-        loop: true,
-        speed: 1000,
-        parallax: true,
-        autoplay: {
-            delay: 6500,
-            disableOnInteraction: false,
-        },
-        watchSlidesProgress: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        on: {
-            progress: function () {
-                var swiper = this;
-                for (var i = 0; i < swiper.slides.length; i++) {
-                    var slideProgress = swiper.slides[i].progress;
-                    var innerOffset = swiper.width * interleaveOffset;
-                    var innerTranslate = slideProgress * innerOffset;
-                    swiper.slides[i].querySelector(".slide-inner").style.transform =
-                        "translate3d(" + innerTranslate + "px, 0, 0)";
-                }
-            },
-
-            touchStart: function () {
-                var swiper = this;
-                for (var i = 0; i < swiper.slides.length; i++) {
-                    swiper.slides[i].style.transition = "";
-                }
-            },
-
-            setTransition: function (speed) {
-                var swiper = this;
-                for (var i = 0; i < swiper.slides.length; i++) {
-                    swiper.slides[i].style.transition = speed + "ms";
-                    swiper.slides[i].querySelector(".slide-inner").style.transition =
-                        speed + "ms";
-                }
-            }
-        }
-    };
-
-    var swiper = new Swiper(".swiper-container", swiperOptions);
-
-    // DATA BACKGROUND IMAGE
-    var sliderBgSetting = $(".slide-bg-image");
-    sliderBgSetting.each(function (indx) {
-        if ($(this).attr("data-background")) {
-            $(this).css("background-image", "url(" + $(this).data("background") + ")");
-        }
-    });
-
+   
     //Setting hero slider
     function heroSlider() {
         if ($(".hero-slide-wrap").length) {
@@ -310,142 +246,10 @@
     });
 
 
-    /*------------------------------------------
-        = Featured SLIDER
-    -------------------------------------------*/
-    if ($(".category-slider-active").length) {
-        $(".category-slider-active").owlCarousel({
-            autoplay: true,
-            smartSpeed: 300,
-            margin: 0,
-            loop: true,
-            autoplayHoverPause: true,
-            dots: false,
-            navText: ['<i class="icon-angale-right"></i>', '<i class="icon-angale-right2"></i>'],
-            nav: false,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-
-                350: {
-                    items: 2,
-                },
-                500: {
-                    items: 3,
-                },
-
-                768: {
-                    items: 4,
-                },
-                992: {
-                    items: 5,
-                },
-
-                1200: {
-                    items: 6
-                },
-
-                1400: {
-                    items: 6
-                },
-
-            }
-        });
-    }
-    /*------------------------------------------
-       product slider
-    -------------------------------------------*/
-    if ($(".product-active").length) {
-        $(".product-active").owlCarousel({
-            autoplay: true,
-            smartSpeed: 300,
-            margin: 20,
-            loop: true,
-            autoplayHoverPause: true,
-            dots: false,
-            navText: ['<i class="ti-arrow-left"></i>', '<i class="ti-arrow-right"></i>'],
-            nav: false,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-
-                350: {
-                    items: 1,
-                },
-                500: {
-                    items: 2,
-                },
-
-                768: {
-                    items: 3,
-                },
-                992: {
-                    items: 3,
-                },
-
-                1200: {
-                    items: 4
-                },
-
-                1400: {
-                    items: 4
-                },
-
-            }
-        });
-    }
-
-    /*------------------------------------------
-       = testimonial-active
-   -------------------------------------------*/
-    if ($(".testimonial-active").length) {
-        $(".testimonial-active").owlCarousel({
-            autoplay: true,
-            smartSpeed: 300,
-            margin: 20,
-            loop: true,
-            autoplayHoverPause: true,
-            dots: false,
-            navText: ['<i class="ti-arrow-left"></i>', '<i class="ti-arrow-right"></i>'],
-            nav: false,
-            loop: true,
-            autoWidth: true,
-            items: 4,
-
-            responsive: {
-                0: {
-                    items: 1,
-                    autoWidth: false,
-                },
-
-                500: {
-                    items: 1,
-                },
-
-                768: {
-                    items: 2,
-                },
-                992: {
-                    items: 2,
-                },
-
-                1200: {
-                    items: 4
-                },
-
-                1400: {
-                    items: 4
-                },
-
-            }
-        });
-    }
 
 
     $(document).ready(function () {
-        $('.product-popup').magnificPopup({
+        $('.gallery-popup').magnificPopup({
             type: 'image',
             mainClass: 'mfp-with-zoom',
             gallery: {
@@ -505,74 +309,6 @@
     })
 
 
-    /*------------------------------------------
-        = CONTACT FORM SUBMISSION
-    -------------------------------------------*/
-    if ($("#contact-form-main").length) {
-        $("#contact-form-main").validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-
-                email: "required",
-
-                adress: "required",
-
-                name: "required",
-
-                lname: "required",
-
-                service: "required",
-
-                phone: "required",
-
-                note: "required",
-
-                subject: {
-                    required: true
-                }
-
-
-            },
-
-            messages: {
-                name: "Please enter your name",
-                lname: "Please enter your Last name",
-                email: "Please enter your email",
-                adress: "Please enter your adress",
-                phone: "Please enter your Phone",
-                service: "Please select your contact service",
-                note: "Please enter your comment"
-            },
-
-            submitHandler: function (form) {
-                $.ajax({
-                    type: "POST",
-                    url: "mail-contact.php",
-                    data: $(form).serialize(),
-                    success: function () {
-                        $("#loader").hide();
-                        $("#success").slideDown("slow");
-                        setTimeout(function () {
-                            $("#success").slideUp("slow");
-                        }, 3000);
-                        form.reset();
-                    },
-                    error: function () {
-                        $("#loader").hide();
-                        $("#error").slideDown("slow");
-                        setTimeout(function () {
-                            $("#error").slideUp("slow");
-                        }, 3000);
-                    }
-                });
-                return false; // required to block normal submit since you used ajax
-            }
-
-        });
-    }
 
 
     /*==========================================================================
@@ -581,7 +317,6 @@
     $(window).on('load', function () {
 
         preloader();
-
 
         toggleMobileNavigation();
 
@@ -626,47 +361,6 @@
             smallNavFunctionality();
         }, 200));
     });
-
-
-
-    /*------------------------------------------
-        = SHOP DETAILS PAGE PRODUCT SLIDER
-    -------------------------------------------*/
-    if ($(".shop-single-slider").length) {
-        $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav',
-        });
-        $('.slider-nav').slick({
-            slidesToShow: 10,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            vertical: true,
-            verticalSwiping: true,
-            focusOnSelect: true,
-            arrows: false,
-
-            responsive: [
-                {
-                    breakpoint: 500,
-                    settings: {
-                        slidesToShow: 5,
-                        infinite: true
-                    }
-                },
-                {
-                    breakpoint: 400,
-                    settings: {
-                        slidesToShow: 5
-                    }
-                }
-            ]
-
-        });
-    }
 
 
 
