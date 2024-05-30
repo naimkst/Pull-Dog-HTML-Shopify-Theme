@@ -1,5 +1,6 @@
 .theme-btn,
-.theme-btn-s2 {
+.theme-btn-s2,
+.theme-btn-s3 {
 	background: $dark-gray;
 	color: $white;
 	display: inline-block;
@@ -70,6 +71,31 @@
 	&:focus,
 	&:active {
 		background-color: $black;
+		color: $white;
+	}
+}
+
+.theme-btn-s3 {
+	background: $theme-primary-color;
+	color: $white;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 29.664px;
+
+	@media(max-width:767px) {
+		padding: 12px 22px;
+		font-size: 18px;
+	}
+
+	&:before {
+		background: $dark-gray;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $theme-primary-color;
 		color: $white;
 	}
 }
