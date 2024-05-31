@@ -121,7 +121,7 @@
     })
 
 
-   
+
     //Setting hero slider
     function heroSlider() {
         if ($(".hero-slide-wrap").length) {
@@ -330,6 +330,107 @@
         return false;
     })
 
+
+    /*------------------------------------------
+        = SHOP DETAILS PAGE PRODUCT SLIDER
+    -------------------------------------------*/
+    if ($(".shop-single-slider").length) {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav',
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 10,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            vertical: true,
+            verticalSwiping: true,
+            focusOnSelect: true,
+            arrows: false,
+
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        infinite: true
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        infinite: true,
+                        vertical: false,
+                        verticalSwiping: false,
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 3,
+                        infinite: true,
+                        vertical: false,
+                        verticalSwiping: false,
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 3,
+                        vertical: false,
+                        verticalSwiping: false,
+                    }
+                }
+            ]
+
+        });
+    }
+
+
+    /*------------------------------------------
+   product-active 
+    -------------------------------------------*/
+    if ($(".product-active").length) {
+        $(".product-active").owlCarousel({
+            autoplay: true,
+            smartSpeed: 2000,
+            margin: 24,
+            loop: true,
+            items: 4,
+            autoplayHoverPause: true,
+            dots: false,
+            arrows: false,
+            navText: ['<i class="ti-arrow-left"></i>', '<i class="ti-arrow-right"></i>'],
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+
+                550: {
+                    items: 2,
+                },
+
+                767: {
+                    items: 2,
+                },
+                992: {
+                    items: 3,
+                },
+
+                1200: {
+                    items: 3,
+                },
+                1399: {
+                    items: 4
+                }
+            }
+        });
+    }
 
 
 
