@@ -1118,3 +1118,148 @@
         }
     }
 }
+
+
+/*------------------------------------------------------------------
+2. privacy-page
+----------------------------------------------------------------*/
+
+.privacy-page {
+    .privacy-hero {
+        .section-text {
+            padding-bottom: 90px;
+            @media(max-width:767px){
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    .pulldog-terms-section{
+        h4{
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+        .pulldog-terms-wrap{
+            .pulldog-terms-img{
+                img{
+                    width: 100%;
+                }
+            }
+    
+            .pulldog-terms-text{
+                padding-top: 30px;
+                h2{
+                   font-size: 40px;
+                   font-weight: 700;
+                   margin-bottom: 20px;
+    
+                   @media(max-width:991px){
+                    font-size: 30px;
+                   }
+                   @media(max-width:767px){
+                    font-size: 25px;
+                   }
+                }
+    
+                ul{
+                    list-style: none;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                    li{
+                        padding: 10px;
+                        position: relative;
+                        padding-left: 20px;
+                        font-size: 17px;
+    
+                        &:before{
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            width: 8px;
+                            height: 8px;
+                            background: $theme-primary-color;
+                            content: "";
+                            border-radius: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+    
+                .t-sub{
+                    padding: 20px 0;
+    
+                    .pulldog-p-details-img{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    
+        .pulldog-faq-section{
+            margin-top: 30px;
+
+            .accordion-item{
+                border: 0;
+                border: 1px solid #e1e1e1;
+                padding: 5px 20px;
+                margin-bottom: 20px;
+        
+        
+                .accordion-body{
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+        
+                button{
+                    padding: 20px;
+                    border:0;
+                    border-radius: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: 18px;
+                    color: $heading-color;
+                    text-align: left;
+                    font-family: $base-font;
+        
+                    &::after{
+                        background: none;
+                        font-family: "themify";
+                        content: "\e622";
+                        font-size: 15px;
+                        transform: rotate(0deg);
+                        font-weight: 700;
+                    }
+        
+                    
+                    &.collapsed{
+                        color: #373b3e;
+        
+                        &::after{
+                            content: "\e61a";
+                        }
+                    }
+                    &:focus{
+                        box-shadow: none;
+                        outline: none;
+                        border-color: #e1e1e1;
+                        
+                    }
+        
+                    
+                }
+        
+                .accordion-collapse{
+                    border: 0;
+                }
+            }
+        
+            .accordion-button{
+                background: transparent;
+            }
+        }
+    }
+}
