@@ -41,7 +41,7 @@
 
 @media (min-width: 991px) {
 	.site-header {
-		padding: 0 150px;
+		padding: 0 130px;
 
 	}
 }
@@ -100,7 +100,6 @@
 	.site-header #navbar {
 		/*** hover effect ***/
 		justify-content: center;
-		padding-left: 45px;
 	}
 
 	.site-header #navbar li {
@@ -296,7 +295,7 @@
 .site-header .header-right>div {
 	float: left;
 	position: relative;
-	margin-right: 12px;
+	margin-right: 40px;
 }
 
 .site-header .header-right {
@@ -347,7 +346,7 @@
 
 
 .site-header .header-right .header-search-form-wrapper .fi:before {
-	font-size: 25px;
+	font-size: 30px;
 
 	@media(max-width:450px) {
 		font-size: 22px;
@@ -377,6 +376,9 @@
 		top: -2px
 	}
 
+}
+.site-header .header-right .cart-toggle-btn {
+	min-width: 28px;
 }
 
 /*** cart-search-contact ***/
@@ -954,7 +956,7 @@
 				font-style: normal;
 				font-weight: 700;
 				line-height: 26px;
-				padding: 40px 30px;
+				padding: 36px 60px;
 				display: block;
 				position: relative;
 				color: rgba(255, 255, 255, 0.50);
@@ -1277,13 +1279,6 @@
 		}
 	}
 
-	.navbar-header .navbar-brand {
-		img {
-			max-width: 170px;
-		}
-	}
-
-
 	/*navbar collaps less then 992px*/
 	@include media-query (991px) {
 		.navbar-collapse.collapse {
@@ -1342,6 +1337,12 @@
 @media(max-width: 1700px) {
 	.site-header {
 		padding: 0 30px;
+	}
+}
+
+@media(max-width: 1800px) {
+	.site-header #navbar>ul>li>a {
+		padding: 25px 25px;
 	}
 }
 
