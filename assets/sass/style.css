@@ -2633,12 +2633,12 @@ img {
 }
 .hero-area .left-img {
   position: absolute;
-  left: 30px;
+  left: 0;
   top: 0;
 }
 @media (max-width: 1500px) {
   .hero-area .left-img {
-    left: 10px;
+    left: 0;
   }
 }
 @media (max-width: 991px) {
@@ -2653,7 +2653,7 @@ img {
 }
 @media (max-width: 1500px) {
   .hero-area .left-img img {
-    max-width: 200px;
+    max-width: 250px;
   }
 }
 @media (max-width: 1399px) {
