@@ -468,12 +468,12 @@ img {
   color: #fff;
   display: inline-block;
   font-weight: 500;
-  padding: 22px 60px;
+  padding: 18px 60px;
   border: 0;
   z-index: 11;
   font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 38.286px;
   text-transform: uppercase;
   border: 0;
@@ -545,7 +545,7 @@ img {
 
 .theme-btn-s2 {
   background: #D90214;
-  padding: 22px 48px;
+  padding: 18px 48px;
 }
 @media (max-width: 767px) {
   .theme-btn-s2 {
@@ -1058,7 +1058,6 @@ img {
 }
 @media (max-width: 991px) {
   .pagination-wrapper {
-    text-align: left;
     margin-top: 40px;
   }
 }
@@ -1082,7 +1081,7 @@ img {
 }
 .pagination-wrapper .pg-pagination li a {
   background-color: transparent;
-  width: 90px;
+  width: 50px;
   height: 50px;
   line-height: 50px;
   font-size: 14px;
@@ -1141,7 +1140,6 @@ img {
 @media (max-width: 991px) {
   .pagination-wrapper-right {
     margin-top: 45px;
-    text-align: left;
   }
 }
 
@@ -3217,7 +3215,7 @@ img {
   box-shadow: 0px -8px 0px 0px #E41E25;
   padding: 30px;
   padding-right: 0;
-  min-height: 730px;
+  min-height: 700px;
 }
 @media (max-width: 991px) {
   .service-area .service-item {
@@ -3279,9 +3277,6 @@ img {
     line-height: 25.47px;
     padding-left: 20px;
   }
-}
-.service-area .service-item .service-text ul li + li {
-  margin-top: 10px;
 }
 .service-area .service-item .service-text ul li:before {
   position: absolute;
@@ -3615,7 +3610,7 @@ img {
 }
 .video-area .section-text h2 {
   font-size: 42px;
-  line-height: 58px;
+  line-height: 53px;
   letter-spacing: -2.1px;
   max-width: 300px;
   margin-bottom: 30px;
@@ -3779,8 +3774,8 @@ img {
 .features-area .features-item ul li {
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 34px;
+  font-weight: 500;
+  line-height: 20px;
   position: relative;
   padding-left: 35px;
 }
@@ -3794,11 +3789,14 @@ img {
 .features-area .features-item ul li:before {
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 0;
   content: "";
   background: url(../check.svg);
   width: 24px;
   height: 24px;
+}
+.features-area .features-item ul li + li {
+  margin-top: 10px;
 }
 .features-area .features-item .theme-btn, .features-area .features-item .view-cart-btn {
   display: none;
@@ -3852,7 +3850,7 @@ img {
 }
 .cta-area .section-text .text-inner h1 {
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .cta-area .section-text .text-inner p {
   font-weight: 500;
@@ -4280,7 +4278,7 @@ img {
   font-size: 54px;
   font-style: normal;
   font-weight: 700;
-  line-height: 58px;
+  line-height: 48px;
   letter-spacing: -2.7px;
 }
 @media (max-width: 1700px) {
@@ -4414,6 +4412,7 @@ img {
 }
 .dec-section .des-paragraph p {
   margin-bottom: 40px;
+  font-weight: 500;
 }
 
 .timeline-section {
@@ -5358,4 +5357,174 @@ img {
   font-family: "Helvetica Neue LT Pro";
   font-weight: 700;
   margin-bottom: 15px;
+}
+
+.page-title-hero .section-text {
+  padding-bottom: 90px;
+  padding-top: 90px;
+}
+@media (max-width: 767px) {
+  .page-title-hero .section-text {
+    padding-bottom: 50px;
+  }
+}
+
+.product-page .product-area .product-wrap .product-item {
+  margin-bottom: 30px;
+}
+
+/*--------------------------------------------------------------
+20. wpo-contact-pg-section
+--------------------------------------------------------------*/
+.contact-page .wpo-contact-title {
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .contact-page .wpo-contact-title {
+    margin-bottom: 30px;
+  }
+}
+.contact-page .wpo-contact-title h2 {
+  font-size: 45px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+@media (max-width: 575px) {
+  .contact-page .wpo-contact-title h2 {
+    font-size: 25px;
+    font-size: 1.6666666667rem;
+  }
+}
+.contact-page form input,
+.contact-page form select,
+.contact-page form textarea {
+  background: transparent;
+  width: 100%;
+  height: 55px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  box-shadow: none !important;
+  padding-left: 25px;
+  border: 1px solid #ebebeb;
+}
+@media (max-width: 991px) {
+  .contact-page form input,
+  .contact-page form select,
+  .contact-page form textarea {
+    height: 45px;
+  }
+}
+.contact-page form input:focus,
+.contact-page form select:focus,
+.contact-page form textarea:focus {
+  border-color: #D90214;
+  background: transparent;
+}
+.contact-page form textarea {
+  height: 180px;
+  padding-top: 15px;
+}
+.contact-page form {
+  margin: 0 -15px;
+  overflow: hidden;
+}
+.contact-page form ::-webkit-input-placeholder {
+  font-style: 15px;
+  font-style: normal;
+  color: #9d9c9c;
+}
+.contact-page form :-moz-placeholder {
+  font-style: 15px;
+  font-style: normal;
+  color: #9d9c9c;
+}
+.contact-page form ::-moz-placeholder {
+  font-style: 15px;
+  font-style: normal;
+  color: #9d9c9c;
+}
+.contact-page form :-ms-input-placeholder {
+  font-style: 15px;
+  font-style: normal;
+  color: #9d9c9c;
+}
+.contact-page form .submit-area {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  .contact-page form .submit-area {
+    margin-bottom: 0;
+  }
+}
+.contact-page form .submit-area .theme-btn-s3 {
+  border-radius: 0px;
+  font-family: "Plain";
+  font-size: 16px;
+  padding: 10px 35px 12px;
+  text-transform: capitalize;
+}
+.contact-page form .submit-area .theme-btn-s3:after {
+  border-radius: 0px;
+}
+.contact-page form > div {
+  width: calc(50% - 30px);
+  float: left;
+  margin: 0 15px 25px;
+}
+@media (max-width: 600px) {
+  .contact-page form > div {
+    width: calc(100% - 25px);
+    float: none;
+  }
+}
+.contact-page form .fullwidth {
+  width: calc(100% - 25px);
+  float: none;
+  clear: both;
+}
+.contact-page .wpo-contact-form-area {
+  padding: 50px;
+  background: #fff;
+  box-shadow: 0px 1px 15px 0px rgba(62, 65, 159, 0.1);
+  position: relative;
+  z-index: 99;
+}
+@media (max-width: 767px) {
+  .contact-page .wpo-contact-form-area {
+    padding: 30px;
+    padding-top: 50px;
+  }
+}
+.contact-page .checkbox-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-page .checkbox-wrap input {
+  width: unset;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+}
+
+.login-page .text {
+  margin-top: 15px;
+}
+.login-page .text a {
+  color: #7F7F8A;
+  text-decoration: underline;
+}
+.login-page .text a:hover {
+  color: #D90214;
+}
+.login-page .theme-btn-s3 {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */

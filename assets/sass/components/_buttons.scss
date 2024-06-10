@@ -5,12 +5,12 @@
 	color: $white;
 	display: inline-block;
 	font-weight: 500;
-	padding: 22px 60px;
+	padding: 18px 60px;
 	border: 0;
 	z-index: 11;
 	font-size: 24px;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 38.286px;
 	text-transform: uppercase;
 	border: 0;
@@ -62,7 +62,7 @@
 
 .theme-btn-s2 {
 	background: $theme-primary-color;
-	padding: 22px 48px;
+	padding: 18px 48px;
 	
 	@media(max-width:767px) {
 		padding: 12px 22px;

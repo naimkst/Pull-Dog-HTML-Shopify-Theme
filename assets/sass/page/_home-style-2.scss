@@ -148,7 +148,7 @@
                 font-size: 54px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 58px;
+                line-height: 48px;
                 letter-spacing: -2.7px;
 
                 @media(max-width:1700px) {
@@ -298,6 +298,7 @@
     .des-paragraph {
         p {
             margin-bottom: 40px;
+            font-weight: 500;
         }
     }
 }
@@ -1363,6 +1364,31 @@
             font-family: "Helvetica Neue LT Pro";
             font-weight: 700;
             margin-bottom: 15px;
+        }
+    }
+}
+
+
+
+// page-title-hero
+.page-title-hero{
+    .section-text {
+        padding-bottom: 90px;
+        padding-top: 90px;
+
+
+        @media(max-width:767px) {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.product-page {
+    .product-area {
+        .product-wrap {
+            .product-item {
+                margin-bottom: 30px;
+            }
         }
     }
 }

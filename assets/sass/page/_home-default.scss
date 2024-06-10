@@ -99,7 +99,7 @@
         box-shadow: 0px -8px 0px 0px #E41E25;
         padding: 30px;
         padding-right: 0;
-        min-height: 730px;
+        min-height: 700px;
 
         @media(max-width:991px) {
             min-height: auto;
@@ -165,10 +165,6 @@
                         font-size: 14px;
                         line-height: 25.47px;
                         padding-left: 20px;
-                    }
-
-                    &+li {
-                        margin-top: 10px;
                     }
 
                     &:before {
@@ -517,7 +513,7 @@
 
         h2 {
             font-size: 42px;
-            line-height: 58px;
+            line-height: 53px;
             letter-spacing: -2.1px;
             max-width: 300px;
             margin-bottom: 30px;
@@ -679,8 +675,8 @@
             li {
                 font-size: 18px;
                 font-style: normal;
-                font-weight: 600;
-                line-height: 34px;
+                font-weight: 500;
+                line-height: 20px;
                 position: relative;
                 padding-left: 35px;
 
@@ -693,11 +689,15 @@
                 &:before {
                     position: absolute;
                     left: 0;
-                    top: 10px;
+                    top: 0;
                     content: "";
                     background: url(../check.svg);
                     width: 24px;
                     height: 24px;
+                }
+
+                &+li {
+                    margin-top: 10px;
                 }
             }
         }
@@ -767,7 +767,7 @@
         .text-inner {
             h1 {
                 margin-top: 20px;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
 
             p {
