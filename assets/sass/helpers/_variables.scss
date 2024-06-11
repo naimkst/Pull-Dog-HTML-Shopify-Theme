@@ -2,6 +2,7 @@
 	Fonts
 ----------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 // Helvetica Neue
 @font-face {
     font-family: 'Helvetica Neue';
@@ -130,6 +131,24 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../FuturaPT-Medium.woff2') format('woff2'),
+        url('../FuturaPT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../FuturaPT-Bold.woff') format('woff2'),
+        url('../FuturaPT-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
 
 
 // fonts

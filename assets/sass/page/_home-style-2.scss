@@ -14,8 +14,22 @@
 
                 @media (max-width: 575px) {
                     max-width: 150px;
+                    max-height: 590px;
                 }
             }
+        }
+    }
+
+    @media (max-width: 575px) {
+        &:before {
+            height: 63%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .section-inner-wrap .section-top-img {
+            max-width: 270px;
+            margin-top: 50px;
         }
     }
 
@@ -27,6 +41,8 @@
     @media (max-width: 575px) {
         .right-bg {
             z-index: 1;
+            height: 440px;
+            margin-top: -100px;
         }
     }
 
@@ -57,9 +73,9 @@
 
             @media (max-width: 575px) {
                 font-size: 72px;
-                line-height: 114.053px;
+                line-height: 86.053px;
                 letter-spacing: -3.6px;
-                margin-top: 0;
+                margin-top: 15px;
                 margin-bottom: 0;
             }
         }
@@ -73,14 +89,18 @@
         }
 
         @media (max-width: 991px) {
-            position: relative;
+            position: absolute;
             z-index: 111;
             margin-top: 0;
+            bottom: 150px;
         }
     }
 }
 
 .hero-style-3 {
+    @media (max-width: 575px) {
+        padding-top: 50px;
+    }
 
     .section-text {
         padding-left: 0;
@@ -88,6 +108,24 @@
 
         @media (max-width: 991px) {
             padding-bottom: 10px;
+        }
+
+        h1 {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            line-height: 50px;
+            margin-top: 15px;
+
+            @media (max-width: 575px) {
+                margin-top: 0;
+            }
+        }
+
+        .theme-btn {
+            font-size: 18px;
+            padding: 10px 40px;
         }
     }
 
@@ -101,8 +139,14 @@
         @media (max-width: 991px) {
             position: relative;
             z-index: 111;
-            margin-top: 0;
+            margin-top: 50px;
         }
+
+        @media (max-width: 575px) {
+            bottom: 0;
+            margin-top: 50px;
+        }
+
     }
 }
 
@@ -181,6 +225,16 @@
                 }
             }
         }
+
+        .theme-btn-s2 {
+            display: none;
+
+            @media(max-width:575px) {
+                display: inline-block;
+                margin-top: 20px;
+            }
+        }
+
 
 
         .video-item {
@@ -293,6 +347,15 @@
                 max-width: 200px;
             }
         }
+
+        p {
+            color: $black;
+            font-weight: 600;
+
+            @media(max-width:575px) {
+                font-size: 20px;
+            }
+        }
     }
 
     .des-paragraph {
@@ -315,7 +378,6 @@
     }
 
     .title {
-
         h2 {
             font-family: Plain;
             font-size: 72px;
@@ -352,6 +414,12 @@
 
         img {
             border-radius: 50px;
+
+            @media(max-width:575px) {
+                min-height: 319px;
+                object-fit: cover;
+            }
+
         }
     }
 }
@@ -493,7 +561,8 @@
 
     &:before {
         @media(max-width:575px) {
-            height: 80%;
+            height: 73%;
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
         }
     }
 
@@ -505,8 +574,20 @@
             padding-bottom: 40px;
         }
 
+        @media (max-width: 575px) {
+            padding-top: 60px;
+
+            .section-top-img {
+                margin-bottom: 30px;
+            }
+        }
+
         h1 {
             margin-bottom: 30px;
+
+            @media (max-width: 575px) {
+                margin-bottom: 20px;
+            }
         }
 
         p {
@@ -514,6 +595,13 @@
             font-size: 20px;
             font-weight: 400;
             line-height: 35px;
+
+            @media(max-width:575px) {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30.705px;
+            }
         }
     }
 
@@ -1359,6 +1447,27 @@
 
 // cta-area style-4
 .cta-area.style-4 {
+
+    @media (max-width: 575px) {
+        &:before {
+            height: 56%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .cta-img {
+            left: 30px;
+
+            img {
+                max-width: 300px;
+            }
+        }
+
+        .right-bg {
+            background-position: right !important;
+        }
+    }
+
     .section-text {
         .text-inner h1 {
             font-family: "Helvetica Neue LT Pro";
@@ -1371,7 +1480,7 @@
 
 
 // page-title-hero
-.page-title-hero{
+.page-title-hero {
     .section-text {
         padding-bottom: 90px;
         padding-top: 90px;
