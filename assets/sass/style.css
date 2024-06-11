@@ -4962,10 +4962,14 @@ img {
   height: auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.shop-hero .shop-single-slider .slider-for img {
+  max-height: 700px;
+  object-fit: cover;
 }
 @media (max-width: 991px) {
   .shop-hero .shop-single-slider .slider-for img {
