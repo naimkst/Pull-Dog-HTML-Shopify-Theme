@@ -4828,6 +4828,17 @@ img {
 .shop-hero {
   background: #222222;
   border-top: 1px solid rgba(224, 224, 224, 0.3);
+  height: 930px;
+}
+@media (max-width: 1399px) {
+  .shop-hero {
+    height: 850px;
+  }
+}
+@media (max-width: 991) {
+  .shop-hero {
+    height: auto;
+  }
 }
 @media (max-width: 1600px) {
   .shop-hero .left-img {
@@ -4988,9 +4999,9 @@ img {
   font-size: 128px;
   font-style: normal;
   font-weight: 900;
-  line-height: 175.779px;
+  line-height: 120.779px;
   letter-spacing: -6.4px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 @media (max-width: 1399px) {
   .shop-hero .shop-text h1 {
